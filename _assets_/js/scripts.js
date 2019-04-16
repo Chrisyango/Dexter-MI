@@ -336,7 +336,7 @@
 			items: 1
 		});
 	}
-	
+
 	$window.ready(function(){
 
 		// Clone Useful Links Icon
@@ -359,6 +359,32 @@
 				});
 			}
 		});
+
+			// Fill sides script
+			function fillSide(){
+				var windowWidth = $('body').outerWidth();
+				var pixelValue = (windowWidth - $('.container').width()) / 2;
+				$('.fillLeft').css({
+						'margin-left': -pixelValue
+				});
+				
+				$('.fillRight').css({
+						'margin-right': -pixelValue
+				});
+				$('.fillLeft.withPadding').css({
+						'margin-left': -pixelValue,
+						'padding-left': pixelValue
+				});
+				
+				$('.fillRight.withPadding').css({
+						'margin-right': -pixelValue,
+						'padding-right': pixelValue
+				});
+				
+				$('#side-bg').width($('#side-content').outerWidth());
+			}
+			fillSide();
+			$window.resize(fillSide);
 
 		if ( typeof $.fn.sociafeed !== "undefined"){
 			$('.social-feed-container').socialfeed({
