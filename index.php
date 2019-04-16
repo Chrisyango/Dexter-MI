@@ -145,10 +145,11 @@
 	</section><!-- /#useful-links -->
 
 	<section id="content">
+		<div id="content-bg" style="background:url('./_assets_/images/content-bg.jpg') center no-repeat;background-size:cover;"></div>
 		<section id="news-events-quick">
 			<div class="container">
 				<div class="row">
-					<section id="events" class="col-md-5">
+					<section id="events" class="col-md-4">
 						<h2>events + meetings</h2>
 						<div id="calendar">
 							<img src="./_assets_/images/events.png" alt="Events">
@@ -156,11 +157,11 @@
 						<a href="./" class="btn">master calendar</a>
 					</section><!-- /#events -->
 
-					<section id="news" class="col-md-4">
+					<section id="news" class="col-md-5">
 						<h2>news stories</h2>
 						<div id="news-links" class="owl-carousel">
 							<div class="news-link-wrapper">
-								<a href="./" class="news-link">
+								<div class="news-link">
 									<div class="news-link-info">
 										<h3>local update: installation of rectangular rapid flashing beacon</h3>
 										<p>
@@ -169,8 +170,8 @@
 										<span>december 14, 2018</span>
 										<a href="./">read more</a>
 									</div><!-- /.news-link-info -->
-								</a><!-- /.news-link -->
-								<a href="./" class="news-link">
+								</div><!-- /.news-link -->
+								<div class="news-link">
 									<div class="news-link-info">
 										<h3>leaf collection information</h3>
 										<p>
@@ -179,8 +180,8 @@
 										<span>december 13, 2018</span>
 										<a href="./">read more</a>
 									</div><!-- /.news-link-info -->
-								</a><!-- /.news-link -->
-								<a href="./" class="news-link">
+								</div><!-- /.news-link -->
+								<div class="news-link">
 									<div class="news-link-info">
 										<h3>ice rink installation</h3>
 										<p>
@@ -189,7 +190,7 @@
 										<span>december 13, 2018</span>
 										<a href="./">read more</a>
 									</div><!-- /.news-link-info -->
-								</a><!-- /.news-link -->
+								</div><!-- /.news-link -->
 							</div><!-- /.news-links-wrapper -->
 						</div><!-- /#news-links -->
 						<a href="./" class="btn">news archives</a>

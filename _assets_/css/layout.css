@@ -25,11 +25,18 @@
 }
 @font-face {
 	font-family: 'ArnoPro';
-	src: url(../fonts/arnopro/arnopro-regular-webfont.woff) format('woff');
+	src: url(../fonts/arnopro/ArnoPro-Regular.woff) format('woff');
+	src: url(../fonts/arnopro/arno-pro-regular.woff2) format('woff2');
 }
 @font-face {
 	font-family: 'ArnoProSemi';
-	src: url(../fonts/arnopro/arnopro-smbd.woff) format('woff');
+	src: url(../fonts/arnopro/arno-pro-semibold-display.woff) format('woff');
+	src: url(../fonts/arnopro/arno-pro-semibold-display.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'ArnoProBold';
+	src: url(../fonts/arnopro/ArnoPro-Bold.woff) format('woff');
+	src: url(../fonts/arnopro/arno-pro-bold.woff2) format('woff2');
 }
 body{background:#fff;font-size:14px;line-height:1.6;font-family:'ArnoPro',sans-serif;color:#444;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}
 
@@ -126,21 +133,21 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-.btn{padding:10px 20px;background:#0f99ee;color:#fff!important;border:0;border-radius:0;display:inline-block;font-size:12px;font-weight:900!important;text-decoration:none;cursor:pointer;line-height:normal;vertical-align:top;font-family:'ArnoProSemi',sans-serif;text-transform:uppercase;transition:background .3s}
+.btn{padding:10px 20px;background:#d0c3a3;color:#111!important;border:0;border-radius:0;display:inline-block;font-size:12px;font-weight:900!important;text-decoration:none;cursor:pointer;line-height:normal;vertical-align:top;font-family:'ArnoProSemi',sans-serif;text-transform:uppercase;transition:background .3s}
 .button:hover,
 a.button:hover,
 button:hover,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
-.btn:hover{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#0e8cda}
+.btn:hover{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#d0c3a3}
 .button:active,
 a.button:active,
 button:active,
 input[type="submit"]:active,
 input[type="reset"]:active,
 input[type="button"]:active,
-.btn:active{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#0e8cda}
+.btn:active{-webkit-box-shadow:none;-moz-box-shadow:none;-o-box-shadow:none;box-shadow:none;background:#d0c3a3}
 button::-moz-focus-inner,
 input::-moz-focus-inner{border:0;padding:0}
 
@@ -272,7 +279,7 @@ nav,
 /*--------------- #slider ---------------*/
 #slider {position: relative; height: 800px; border-bottom-left-radius: 400% 65%; border-bottom-right-radius: 400% 65%; overflow: hidden; margin-top: -90px;}
 
-/*--------------- #quick-links ---------------*/
+/*--------------- #useful-links ---------------*/
 #useful-links {background-color: #d0c3a3; margin-top: -74px;}
 .useful-link {display: block; text-align: center; text-decoration: none; padding: 120px 0 12px; transition: 0.3s all;}
 .useful-link:hover {text-decoration: none; background-color: #e5d8b7;}
@@ -281,6 +288,29 @@ nav,
 .useful-link h3 {font-family: 'ArnoPro'; font-size: 24px; line-height: 36px; letter-spacing: 0.005em; color: #111;}
 .useful-link-icon {position: relative; width: 58px; height: 60px; margin: 0 auto;}
 .useful-link-icon.clone {position: absolute; top: 0; left: 0; transform: scale(1.32, 1.36); opacity: 0; transition: all 0.3s;}
+
+/*--------------- #content ---------------*/
+#content {position: relative; padding-top: 73px; background-color: rgba(255,255,255,0.95)}
+#content-bg {position: absolute; left: 0; bottom: 0; height: 1073px; width: 100%; z-index: -1;}
+#content h2 {font-family: 'ArnoProBold'; font-size: 38px; line-height: 38px; letter-spacing: 0.01em; color: #315127; text-transform: capitalize;}
+#content a.btn {font-size: 22px; letter-spacing: 0.01em; color: #111; text-transform: capitalize; width: 220px; height: 50px; line-height: 56px; padding: 0; border-radius: 25px;}
+
+#calendar img {width: 420px; height: 795px; margin-left: -16px; margin-top: -3px;}
+#events h2 {margin-left: -2px;}
+#events a.btn {margin-top: 39px;}
+
+#news h2 {margin-left: 2px;}
+#news a.btn {margin-top: 70px;}
+#news-links {margin-left: -34px;}
+.news-link-wrapper:before {content: ''; position: absolute; top: 10px; left: 36px; width: 80px; height: 2px; background-color: #d1c3a1;}
+.news-link {padding: 18px 0 18px 34px; transition: all 0.3s;}
+.news-link:hover {box-shadow: 0px 2px 25px 0px rgba(0, 0, 0, 0.08); background-color: #fff;}
+.news-link h3 {font-family: 'CenturyGothic'; font-size: 28px; line-height: 38px; color: #111; text-transform: capitalize; text-decoration: underline; margin-bottom: 17px;}
+.news-link p {font-size: 18px; line-height: 33px; color: #111; margin-bottom: 4px; padding-right: 40px;}
+.news-link span {font-family: 'CenturyGothic'; font-size: 16px; line-height: 38px; color: #d1c3a1; text-transform: capitalize;}
+.news-link a {position: relative; font-family: 'CenturyGothic'; font-size: 16px; line-height: 38px; color: #d1c3a1; text-transform: uppercase; margin-left: 31px;}
+.news-link a:before {content: ''; position: absolute; top: 4px; left: -19px; bottom: 1px; width: 2px; background-color: #111;}
+.news-link a:after {content: '>'; position: absolute; right: -14px; text-decoration: none;}
 
 /* -----------------------------------------
 

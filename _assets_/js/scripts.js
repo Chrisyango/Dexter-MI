@@ -324,18 +324,19 @@
 				}
 			}
 		});
+
+		let newsLinkCount = $('.news-link-wrapper').length;
+		const newsLinkItem = function(num) {
+			return (newsLinkCount >= num ? num : newsLinkCount);
+		}
+		$("#news-links").owlCarousel({
+			loop: newsLinkCount > 1 ? true : false,
+			navText: ['<i class="fa fa-caret-left"></i>', '<i class="fa fa-caret-right"></i>'],
+			margin: 15,
+			items: 1
+		});
 	}
-
-	// Preloader
-	$window.load(function() {
-
-		setTimeout(function(){
-			$body.addClass('loaded');
-			 $('#loader-wrapper').fadeOut();
-		}, 600);
-
-	});
-
+	
 	$window.ready(function(){
 
 		// Clone Useful Links Icon
