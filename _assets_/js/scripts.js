@@ -84,7 +84,7 @@
 	});
 
 	// Menu Arrows
-	$("#nav > li:has(ul)").addClass('first-parent').children("a,span").append('<i class="fa fa-angle-down down-arrow">');
+	// $("#nav > li:has(ul)").addClass('first-parent').children("a,span").append('<i class="fa fa-angle-down down-arrow">');
 
 	// Menu Toggles
 	$("#nav >li>ul,#flyout >li>ul").addClass('first-level');
@@ -289,34 +289,38 @@
 
 	// Owl Slider
 	if(typeof $.fn.owlCarousel !== "undefined"){
-		let departmentsLinkCount = $('.departments-link').length;
-		const departmentsItem = function(num) {
-			return (departmentsLinkCount >= num ? num : departmentsLinkCount);
+		let usefulLinkCount = $('.useful-link').length;
+		const usefulLinkItem = function(num) {
+			return (usefulLinkCount >= num ? num : usefulLinkCount);
 		}
-		$("#departments-links").owlCarousel({
-			loop: departmentsLinkCount > 1 ? true : false,
+		$("#useful-links-wrapper").owlCarousel({
+			loop: usefulLinkCount > 1 ? true : false,
 			responsiveClass: true,
 			nav: true,
 			autoHeight: true,
 			navText: ['<i class="fa fa-caret-left"></i>', '<i class="fa fa-caret-right"></i>'],
-			margin: 0,
+			margin: 15,
 			responsive: {
 				0: {
-					items: departmentsItem(2),
+					items: usefulLinkItem(1),
 				},
 				500: {
-					items: departmentsItem(3),
+					items: usefulLinkItem(2),
+				},
+				500: {
+					items: usefulLinkItem(3),
 				},
 				800: {
-					items: departmentsItem(5),
+					items: usefulLinkItem(4),
 				},
 				1100: {
-					items: departmentsItem(7),
+					items: usefulLinkItem(5),
 				},
-				1400: {
-					items: departmentsItem(9),
+				1390: {
+					items: usefulLinkItem(6),
 					loop: false,
-					nav: false
+					nav: false,
+					margin: 0
 				}
 			}
 		});
@@ -333,6 +337,14 @@
 	});
 
 	$window.ready(function(){
+
+		// Clone Useful Links Icon
+		if($('#useful-links').length) {
+			$('.useful-link').each(function() {
+				let myIconClone = $('.useful-link-icon', $(this)).clone().addClass('clone');
+				$('.useful-link-icon', $(this)).append(myIconClone);
+			});
+		}
 
 		// Translate
 		$('#google_translate_element').on('DOMNodeInserted', function(event) {

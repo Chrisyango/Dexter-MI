@@ -49,14 +49,6 @@
 			<div tabindex="0" id="nav-toggle" class="fa fa-bars"></div>	
 		</div><!-- /#toggles -->
 
-		<div class="social-links hidden-sm hidden-xs fillLeft fillRight withPadding">
-			<a href="./" class="fa fa-facebook-square"></a>
-			<a href="./" class="fa fa-twitter"></a>
-			<a href="./" class="fa fa-instagram"></a>
-			<a href="./" class="fa fa-youtube"></a>
-			<span tabindex="0" id="search-toggle" class="fa fa-search"></span>
-		</div><!-- /.social-links -->
-
 		<nav>
 			<ul id="nav">
 				<li>
@@ -97,7 +89,7 @@
 				<li><a href="./">government</a></li>
 				<li><a href="./">services</a></li>
 				<li><a href="./">business</a></li>
-				<li><a href="./">i wanted to...</a></li>
+				<li><a href="./">i want to..</a></li>
 			</ul> <!-- /#nav -->
 		</nav>
 
@@ -109,13 +101,14 @@
 			</form><!-- /.search-form -->
 		</div><!-- /#search -->
 	</div><!-- /.container -->
+	<div tabindex="0" id="search-toggle" class="fa fa-search"></div>
 </header><!-- /.clearfix -->
 
 <section id="slider">
 	<ul class="bxslider">
 		<li style="background: url('./_assets_/images/hero1.jpg') center no-repeat;background-size:cover;"></li>
-		<li style="background: url('./_assets_/images/hero2.jpg') center no-repeat;background-size:cover;"></li>
-		<li style="background: url('./_assets_/images/hero3.jpg') center no-repeat;background-size:cover;"></li>
+		<!-- <li style="background: url('./_assets_/images/hero2.jpg') center no-repeat;background-size:cover;"></li>
+		<li style="background: url('./_assets_/images/hero3.jpg') center no-repeat;background-size:cover;"></li> -->
 	</ul><!-- /.bxslider -->
 </section><!-- /#slider -->
 

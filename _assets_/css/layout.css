@@ -13,7 +13,25 @@
 #basic styles
 
 -----------------------------------------*/
-body{background:#fff;font-size:14px;line-height:1.6;font-family:sans-serif;color:#444;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}
+@font-face {
+	font-family: 'CenturyGothic';
+	src: url(../fonts/centurygothic/CenturyGothic-Bold.woff) format('woff');
+	src: url(../fonts/centurygothic/CenturyGothic-Bold.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'CenturyGothicItalic';
+	src: url(../fonts/centurygothic/CenturyGothic-Italic.woff) format('woff');
+	src: url(../fonts/centurygothic/CenturyGothic-Italic.woff2) format('woff2');
+}
+@font-face {
+	font-family: 'ArnoPro';
+	src: url(../fonts/arnopro/arnopro-regular-webfont.woff) format('woff');
+}
+@font-face {
+	font-family: 'ArnoProSemi';
+	src: url(../fonts/arnopro/arnopro-smbd.woff) format('woff');
+}
+body{background:#fff;font-size:14px;line-height:1.6;font-family:'ArnoPro',sans-serif;color:#444;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}
 
 /* -----------------------------------------
 
@@ -108,7 +126,7 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"],
-.btn{padding:10px 20px;background:#0f99ee;color:#fff!important;border:0;border-radius:0;display:inline-block;font-size:12px;font-weight:900!important;text-decoration:none;cursor:pointer;line-height:normal;vertical-align:top;font-family:sans-serif;text-transform:uppercase;transition:background .3s}
+.btn{padding:10px 20px;background:#0f99ee;color:#fff!important;border:0;border-radius:0;display:inline-block;font-size:12px;font-weight:900!important;text-decoration:none;cursor:pointer;line-height:normal;vertical-align:top;font-family:'ArnoProSemi',sans-serif;text-transform:uppercase;transition:background .3s}
 .button:hover,
 a.button:hover,
 button:hover,
@@ -138,7 +156,7 @@ input[type="password"],
 input[type="email"],
 input[type="search"],
 textarea,
-select{border:1px solid #e9eaec;padding:10px 14px;outline:none;font-size:13px;font-family:sans-serif;color:#777;margin:0;display:inline-block;background:#fff;border-radius:0;box-shadow:none}
+select{border:1px solid #e9eaec;padding:10px 14px;outline:none;font-size:13px;font-family:'ArnoPro',sans-serif;color:#777;margin:0;display:inline-block;background:#fff;border-radius:0;box-shadow:none}
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -182,7 +200,7 @@ form.loginform label input{display:block;margin-bottom:10px;width:100%;box-sizin
 
 -----------------------------------------*/
 .floating-alert{position:fixed;z-index:99999;bottom:10px;margin:0;right:10px;border:3px solid #fff;background:#000;background:rgba(0,0,0,.9);box-shadow:0 0 10px rgba(0,0,0,.2);color:#fff;padding:30px;font-size:14px;width:350px;}
-.floating-alert h4{color:#ffc140;margin:0 0 10px;font-family:sans-serif;font-weight:bold;text-transform:uppercase;font-size:18px}
+.floating-alert h4{color:#ffc140;margin:0 0 10px;font-family:'CenturyGothic',sans-serif;font-weight:bold;text-transform:uppercase;font-size:18px}
 .floating-alert .btn{padding:8px 10px;margin:20px 0 0 0!important}
 .floating-alert .close{padding:0;background:none!important;color:#fff!important;opacity:1;margin-right:20px}
 
@@ -216,24 +234,53 @@ form.loginform label input{display:block;margin-bottom:10px;width:100%;box-sizin
 
 -----------------------------------------*/
 body{overflow-x:hidden}
-.container {max-width:100%}
+.container {width: 1390px; max-width:100%}
 .text-overflow{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 #calendarEvent{left:0px;max-height:500px;overflow-y:auto;margin:0 auto}
 #skip{position:fixed;top:150px;left:-100%;-webkit-transition:all .3s ease-in;transition:all .3s ease-in;z-index:100}
 #skip:focus{left:15px;text-decoration:none;color:#fff;background-color:#c85530;padding:10px 20px}
 
+/*--------------- #google-translate ---------------*/
+.goog-te-gadget img{display:none}
+.goog-te-gadget-simple{background-color:transparent!important;border:none!important;padding:0!important}
+.goog-te-menu-value span{display:none}
+.goog-te-menu-value span:first-of-type{display:inline-block;margin-left:-4px;font-size:16px;color:#444}
+
 /*--------------- #nav ---------------*/
+header {position: relative; background-color: #315127; text-align: right; z-index: 100; font-size: 0;}
+header .container {position: relative;}
 #nav-toggle,
 .toggle,
 .toggle2{display:none}
 
-.goog-te-gadget img{display:none}
-.goog-te-gadget-simple{background-color:transparent!important;border:none!important;padding:0!important}
-.goog-te-menu-value span{display:none}
-.goog-te-menu-value span:first-of-type{font-family:'FreightSansBold';display:inline-block;margin-left:-4px;font-size:16px;color:#444}
+#logo {position: absolute; top: 0; left: 15px; background-color: #fff; width: 394px; height: 145px; border-bottom-left-radius: 70% 25%; border-bottom-right-radius: 70% 25%;}
+#logo img {position: relative; top: 14px; right: 28px; width: 346px;}
+
+nav,
+#nav {display: inline-block; margin: 0; padding: 0;}
+#nav li {display: inline-block; margin: 0; padding: 0;}
+#nav li a,
+#nav li span {position: relative; display: block; font-family: 'CenturyGothic'; font-size: 19px; line-height: 36px; letter-spacing: 0.005em; color:#fff; text-transform: capitalize; text-decoration: none; padding: 26px 33px 28px; margin-left: 11px;}
+#nav li:not(:last-of-type) a:after,
+#nav li:not(:last-of-type) span:after {content: ''; position: absolute; top: 30px; right: -4px; bottom: 30px; width: 3px; background-color: #d1c3a1;}
+#nav ul {display: none; margin: 0; padding: 0;}
+
+#search {display: none;}
+#search-toggle {position: absolute; top: 0; right: 0; font-size: 30px; color: #d1c3a1; width: 90px; height: 90px; line-height: 90px; text-align: center;}
+#search-toggle:after {z-index: -1;content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: -moz-linear-gradient( 50deg, rgb(33,60,25) 0%, rgba(49,81,39,0) 100%); background-image: -webkit-linear-gradient( 50deg, rgb(33,60,25) 0%, rgba(49,81,39,0) 100%); background-image: -ms-linear-gradient( 50deg, rgb(33,60,25) 0%, rgba(49,81,39,0) 100%);opacity: 0.9}
 
 /*--------------- #slider ---------------*/
-#slider {position: relative; height: 800px; border-bottom-left-radius: 400% 65%; border-bottom-right-radius: 400% 65%;}
+#slider {position: relative; height: 800px; border-bottom-left-radius: 400% 65%; border-bottom-right-radius: 400% 65%; overflow: hidden; margin-top: -90px;}
+
+/*--------------- #quick-links ---------------*/
+#useful-links {background-color: #d0c3a3; margin-top: -74px;}
+.useful-link {display: block; text-align: center; text-decoration: none; padding: 120px 0 12px; transition: 0.3s all;}
+.useful-link:hover {text-decoration: none; background-color: #e5d8b7;}
+.useful-link:hover h3 {font-family: 'ArnoProSemi';}
+.useful-link:hover .useful-link-icon.clone {opacity: 0.4;}
+.useful-link h3 {font-family: 'ArnoPro'; font-size: 24px; line-height: 36px; letter-spacing: 0.005em; color: #111;}
+.useful-link-icon {position: relative; width: 58px; height: 60px; margin: 0 auto;}
+.useful-link-icon.clone {position: absolute; top: 0; left: 0; transform: scale(1.32, 1.36); opacity: 0; transition: all 0.3s;}
 
 /* -----------------------------------------
 
