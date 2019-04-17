@@ -93,6 +93,7 @@
 	// $("#nav > li:has(ul)").addClass('first-parent').children("a,span").append('<i class="fa fa-angle-down down-arrow">');
 
 	// Menu Toggles
+	$("#nav > li").has("ul").children("a").addClass('mega')
 	$("#nav >li>ul,#flyout >li>ul").addClass('first-level');
 	$("#nav  li ul ul").addClass('second-level');
 	$("#nav >li:has(ul)").find("a:first").append('<i class="fa fa-angle-down toggle" tabindex="0">');
@@ -344,6 +345,15 @@
 	}
 
 	$window.ready(function(){
+
+		// Mega Menu		
+		$("#nav>li>ul").addClass('mega-menu clearfix');
+		$('.mega-menu').wrap('<div class="mega-menu-wrapper"></div>')
+		$('#nav>li>a').each(function(){
+			var navText = $(this).text();
+			$('<div class="mega-container"><span class="mega-header">our '+navText+' - menu</span></div>').prependTo($(this).next());
+		});
+		$('.mega-img').insertAfter('.mega-menu-wrapper>div>span');
 
 		// Clone Useful Links Icon
 		if($('#useful-links').length) {

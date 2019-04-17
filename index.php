@@ -36,6 +36,8 @@
 </head>
 <body id="homepage">
 
+<div class="mega-img" style="background:url('./_assets_/images/mega-img.jpg') center no-repeat;background-size:cover;"></div>
+
 <header>
 	<a href="#main" id="skip" tabindex="0">SKIP TO CONTENT</a>
 
@@ -73,7 +75,7 @@
 						<li>
 							<a href="./">community resources</a>
 							<ul>
-								<li><a href="./">commnuity garden</a></li>
+								<li><a href="./">community garden</a></li>
 								<li><a href="./">education</a></li>
 								<li><a href="./">environmental information</a></li>
 								<li><a href="./">library</a></li>

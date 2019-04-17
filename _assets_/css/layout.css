@@ -234,24 +234,6 @@ form.loginform label input{display:block;margin-bottom:10px;width:100%;box-sizin
 
 /* -----------------------------------------
 
-#loader
-
------------------------------------------*/
-#loader-wrapper{position:fixed;top:0;right:0;bottom:0;left:0;background:#233447;z-index:99999;display:none!important}
-#loader-wrapper img{width:60px;position:absolute;top:50%;left:50%;margin:-30px 0 0 -30px;animation:2s cubic-bezier(0.63, 0.045, 0.34, 1) 0s normal none infinite spinning_animation;-webkit-animation:2s cubic-bezier(0.63, 0.045, 0.34, 1) 0s normal none infinite spinning_animation}
-@keyframes spinning_animation {
-	0%{transform:scale(1) rotate(0deg);-o-transform:scale(1) rotate(0deg)}
-	50%{transform:scale(0.8) rotate(360deg);-o-transform:scale(0.8) rotate(360deg)}
-	100%{transform:scale(1) rotate(720deg);-o-transform:scale(1) rotate(720deg)}
-}
-@-webkit-keyframes spinning_animation {
-	0%{-webkit-transform:scale(1) rotate(0deg)}
-	50%{-webkit-transform:scale(0.8) rotate(360deg)}
-	100%{-webkit-transform:scale(1) rotate(720deg)}
-}
-
-/* -----------------------------------------
-
 #main
 
 -----------------------------------------*/
@@ -277,13 +259,15 @@ header .container {position: relative;}
 #logo {position: absolute; top: 0; left: -2px; width: 428px;}
 
 nav,
-#nav {display: inline-block; margin: 0; padding: 0;}
-#nav li {display: inline-block; margin: 0; padding: 0;}
-#nav li a,
-#nav li span {position: relative; display: block; font-family: 'CenturyGothic'; font-size: 19px; line-height: 36px; letter-spacing: 0.005em; color:#fff; text-transform: capitalize; text-decoration: none; padding: 26px 33px 28px; margin-left: 11px;}
-#nav li:not(:last-of-type) a:after,
-#nav li:not(:last-of-type) span:after {content: ''; position: absolute; top: 30px; right: -4px; bottom: 30px; width: 3px; background-color: #d1c3a1;}
-#nav ul {display: none; margin: 0; padding: 0;}
+#nav {position: relative; display: inline-block; margin: 0; padding: 0;}
+#nav>li {display: inline-block; margin: 0; padding: 0;}
+#nav>li>a,
+#nav>li>span {position: relative; display: block; font-family: 'CenturyGothic'; font-size: 19px; line-height: 36px; letter-spacing: 0.005em; color:#fff; text-transform: capitalize; text-decoration: none; padding: 26px 33px 28px 44px;}
+#nav>li:not(:last-of-type)>a:after,
+#nav>li:not(:last-of-type)>span:after {content: ''; position: absolute; top: 30px; right: -1.5px; bottom: 30px; width: 3px; background-color: #d1c3a1;}
+#nav ul,
+#nav>li>ul {display: none; margin: 0; padding: 0;}
+.mega-menu-wrapper {display: none;}
 
 #search {display: none; position: absolute; top: calc(100% + 10px); right: 0; width: 433px;}
 #search label {display: none;}
@@ -463,6 +447,25 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 	#flyout,#nav{display:block!important}
 
 	/*--------------- #nav ---------------*/
+	#nav>li:hover>a {font-family: 'CenturyGothic'; text-transform: uppercase; background-color: rgba(209,195,161,0.9); letter-spacing: 0.025em; font-size: 18px;}
+	#nav li:hover>.mega-menu-wrapper,
+	#nav ul {display: block;}
+	#nav .mega-menu-wrapper,
+	#nav ul{display: block;}
+	#nav .mega-menu-wrapper {position: absolute; top: calc(100% + 10px); left: 0; right: -23px; background-color: #faf9f5; text-align: left; font-size: 0; padding: 33px;}
+	#nav>li>.mega-menu-wrapper>ul {float: left; column-count: 2; column-gap: 30px; width: 60%; padding-left: 17px; padding-top: 46px;}
+	#nav ul li {display: block; margin-bottom: 2px;}
+	#nav ul li a,
+	#nav ul li span {font-family: 'CenturyGothicRegular'; font-size: 18px; line-height: 36px; letter-spacing: 0.01em; color: #111; text-transform: capitalize; text-decoration: none;}
+	#nav ul ul {margin-left: 18px; margin-top: 1px; margin-bottom: 5px;}
+	#nav ul ul li {margin-bottom: 0;}
+	#nav ul ul li a,
+	#nav ul ul li span {font-family: 'ArnoProItalic'; font-size: 18px; line-height: 28px; letter-spacing: 0.01em; color: #315127;}
+	#nav .mega-container {float: left;width: 40%;}
+	#nav .mega {position: relative;}
+	#nav li:hover .mega:before {content: ''; position: absolute; bottom: 13px; left: 50%; transform: translateX(-50%); width: 35px; height: 2px; background-color: #315127;}
+	#nav .mega-header {font-family: 'CenturyGothic'; font-size: 24px; line-height: 36px; letter-spacing: 0.05em; text-transform: uppercase; color: #d1c3a1; display: block; width: 100%;}
+	#nav .mega-img {width: 300px; height: 240px; margin-left: 7px; margin-top: 31px;}
 
 
 }
