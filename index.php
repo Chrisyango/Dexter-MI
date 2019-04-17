@@ -223,11 +223,11 @@
 		<section id="welcome">
 			<div id="welcome-img" style="background:url('./_assets_/images/welcome.jpg') center no-repeat;background-size:cover;"></div>
 			<div id="welcome-info">
-				<h1><span>welcome to the city of</span>dexter<span>michigan</span></h1>
+				<div id="welcome-info-bg" style="background:url('./_assets_/images/welcome-bg.png') center no-repeat;background-size:cover;"></div>
+				<h1>welcome to the city of<img src="./_assets_/images/welcome-h1.png" alt="Welcome Title"></h1>
 				<p>
-					The City of Dexter is located in Southeast Michicgan, along the banks of the Huron River and Mill Creek. Residents and visitors can enjoy a day on the river, walking along nature trails, or biking on the County Border-to-Border trail, stopping in our historic downtown for lunch and some shopping. Cultural activites inlcude the loacl theatre, historical mueseum, summer concerts, ice skating in the winter, festivals, and simply playing the parks.
+					The City of Dexter is located in Southeast Michicgan, along the banks of the Huron River and Mill Creek. Residents and visitors can enjoy a day on the river, walking along nature trails, or biking on the County Border-to-Border trail, stopping in our historic downtown for lunch and some shopping. Cultural activites inlcude the loacl theatre, historical mueseum, summer concerts, ice skating in the winter, festivals, and simply playing the parks. <a href="./">learn more</a>
 				</p>
-				<a href="./">learn more</a>
 			</div><!-- /#welcome-info -->
 		</section><!-- /#welcome -->
 	</section><!-- /#content -->
