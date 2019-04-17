@@ -462,6 +462,9 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 	#flyout .focused .toggle,#nav .focused .toggle2{-webkit-transform:rotate(-90deg);transform:rotate(-90deg)}
 	#flyout,#nav{display:block!important}
 
+	/*--------------- #nav ---------------*/
+
+
 }
 
 @media only screen and (max-width:991px) {

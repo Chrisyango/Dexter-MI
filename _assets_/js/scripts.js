@@ -54,6 +54,12 @@
 
 	// Search Toggle
 	$('#search-toggle').on('click keypress',function(e){
+		($(this).outerHeight() === 90) ? $(this).css({'height': '100px', 'background-color': '#315127'}) : $(this).css({'height': '90px', 'background-color': 'transparent'})
+		$('#search').stop().slideToggle(200);
+		$(this).toggleClass('fa-search fa-close');
+	});
+
+	$('#search-toggle-mobile').on('click keypress',function(e){
 		$('#search').stop().slideToggle(200);
 		$(this).toggleClass('fa-search fa-close');
 	});
