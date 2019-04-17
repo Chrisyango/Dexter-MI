@@ -92,16 +92,16 @@
 				<li><a href="./">i want to..</a></li>
 			</ul> <!-- /#nav -->
 		</nav>
-
-		<div id="search">
-			<form class="search-form" method="get" action="search.php">
-				<label class="fa fa-search" for="search-input"></label>
-				<input name="q" class="form-control search-input" placeholder="Enter search terms..." type="search" id="search-input">
-				<button><i class="fa fa-search"></i></button>
-			</form><!-- /.search-form -->
-		</div><!-- /#search -->
 	</div><!-- /.container -->
+
 	<div tabindex="0" id="search-toggle" class="fa fa-search"></div>
+	<div id="search">
+		<form class="search-form" method="get" action="search.php">
+			<label class="fa fa-search" for="search-input"></label>
+			<input name="q" class="form-control search-input" placeholder="Enter keyword to search..." type="search" id="search-input">
+			<button>go</button>
+		</form><!-- /.search-form -->
+	</div><!-- /#search -->
 </header><!-- /.clearfix -->
 
 <section id="slider">
@@ -110,6 +110,7 @@
 		<!-- <li style="background: url('./_assets_/images/hero2.jpg') center no-repeat;background-size:cover;"></li>
 		<li style="background: url('./_assets_/images/hero3.jpg') center no-repeat;background-size:cover;"></li> -->
 	</ul><!-- /.bxslider -->
+	<a href="./" class="fa fa-chevron-down"></a>
 </section><!-- /#slider -->
 
 <main id="main">

@@ -44,6 +44,11 @@
 	src: url(../fonts/arnopro/arno-pro-bold.woff2) format('woff2');
 }
 @font-face {
+	font-family: 'ArnoProItalic';
+	src: url(../fonts/arnopro/ArnoPro-Italic.woff) format('woff');
+	src: url(../fonts/arnopro/arno-pro-italic.woff2) format('woff2');
+}
+@font-face {
 	font-family: 'GothamBook';
 	src: url(../fonts/gotham/Gotham\ Book.woff) format('woff');
 	src: url(../fonts/gotham/GothamBook.woff2) format('woff2');
@@ -264,14 +269,12 @@ body{overflow-x:hidden}
 .goog-te-menu-value span:first-of-type{position: relative; top: -1px;font-family:'CenturyGothicRegular';display:inline-block;margin-left:-4px;font-size:18px;color:#444;text-transform:uppercase;text-decoration: underline!important;}
 
 /*--------------- #nav ---------------*/
-header {position: relative; background-color: #315127; text-align: right; z-index: 100; font-size: 0;}
+header {position: fixed; top: 0; left: 0; right: 0; background-color: #315127; text-align: right; z-index: 100; font-size: 0; box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);}
 header .container {position: relative;}
 #nav-toggle,
 .toggle,
 .toggle2{display:none}
-
-#logo {position: absolute; top: 0; left: 15px; background-color: #fff; width: 394px; height: 145px; border-bottom-left-radius: 70% 25%; border-bottom-right-radius: 70% 25%; box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.15);}
-#logo img {position: relative; top: 14px; right: 28px; width: 346px;}
+#logo {position: absolute; top: 0; left: -2px; width: 428px;}
 
 nav,
 #nav {display: inline-block; margin: 0; padding: 0;}
@@ -282,12 +285,17 @@ nav,
 #nav li:not(:last-of-type) span:after {content: ''; position: absolute; top: 30px; right: -4px; bottom: 30px; width: 3px; background-color: #d1c3a1;}
 #nav ul {display: none; margin: 0; padding: 0;}
 
-#search {display: none;}
-#search-toggle {position: absolute; top: 0; right: 0; font-size: 30px; color: #d1c3a1; width: 90px; height: 90px; line-height: 90px; text-align: center;}
+#search {display: none; position: absolute; top: calc(100% + 10px); right: 0; width: 433px;}
+#search label {display: none;}
+#search input,
+#search input::placeholder {font-family: 'ArnoProItalic'; font-size: 22px; letter-spacing: 0.005em; color: #121619; height: 100px; border: none; padding: 0 120px 0 20px;}
+#search button {font-family: 'CenturyGothic'; font-size: 24px; letter-spacing: 0.005em; background-color: #fff; color: #0a5055; position: absolute; top: 0; right: 0; width: 100px; height: 100px; line-height: 100px; text-transform: uppercase; text-align: center; padding: 0;}
+#search-toggle {position: absolute; top: 0; right: 0; font-size: 30px; color: #d1c3a1; width: 90px; height: 90px; line-height: 90px; text-align: center; cursor: pointer;}
 #search-toggle:after {z-index: -1;content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: -moz-linear-gradient( 50deg, rgb(33,60,25) 0%, rgba(49,81,39,0) 100%); background-image: -webkit-linear-gradient( 50deg, rgb(33,60,25) 0%, rgba(49,81,39,0) 100%); background-image: -ms-linear-gradient( 50deg, rgb(33,60,25) 0%, rgba(49,81,39,0) 100%);opacity: 0.9}
 
 /*--------------- #slider ---------------*/
 #slider {position: relative; height: 800px; border-bottom-left-radius: 400% 65%; border-bottom-right-radius: 400% 65%; overflow: hidden; margin-top: -90px;}
+#slider>a {position: absolute; bottom: 46px; left: 50%; transform: translateX(-50%); text-decoration: none; color: #fff; font-size: 38px; z-index: 51;}
 
 /*--------------- #useful-links ---------------*/
 #useful-links {background-color: #d0c3a3; margin-top: -74px;}
@@ -322,7 +330,7 @@ nav,
 .news-link a:before {content: ''; position: absolute; top: 4px; left: -19px; bottom: 1px; width: 2px; background-color: #111;}
 .news-link a:after {content: '>'; position: absolute; right: -14px; text-decoration: none;}
 
-#quick-links-wrapper {position: relative; margin-top: -25px; margin-left: 44px; background-color: #d1c3a1; padding: 24px 47px 170px;}
+#quick-links-wrapper {position: relative; margin-top: -25px; margin-left: 44px; background-color: #d1c3a1; padding: 24px 47px 170px; box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);}
 #quick-links-bg {position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.07;}
 #quick-links-wrapper h2 {color: #fff; margin-bottom: 32px;}
 #quick-links-wrapper ul {margin: 0; padding:0;}
@@ -331,7 +339,7 @@ nav,
 
 #welcome {position: relative; width: 100%; height: 450px; z-index: 1; margin-top: 100px;}
 #welcome-img {float: left; width: 31.1875%; height: 100%;}
-#welcome-info {float: left; position: relative; width: 68.125%; height: 100%; padding: 58px 79px;}
+#welcome-info {float: left; position: relative; width: 68.8125%; height: 100%; padding: 58px 79px;}
 #welcome-info-bg {position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: -1}
 #welcome-info-bg:before {content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #315127; opacity: 0.8;}
 #welcome-info h1 {font-family: 'CenturyGothic'; font-size: 32px; line-height: 25px; letter-spacing: 0.01em; color: #fff; text-transform: capitalize; margin-bottom: 19px;}
