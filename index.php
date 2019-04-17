@@ -12,8 +12,8 @@
 
 	<link rel="stylesheet" href="_assets_/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="_assets_/fonts/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="_assets_/css/animate.min.css">
 	<link rel="stylesheet" href="_assets_/plugins/owl.carousel/owl-carousel/owl.carousel.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:700">
 	<link rel="stylesheet" href="_assets_/css/layout.css">
 
 	<link rel="shortcut icon" href="_assets_/images/favicon.ico">
@@ -235,13 +235,17 @@
 
 <footer>
 	<div class="container">
-		<section id="top-footer">
+		<section id="top-footer" class="clearfix">
 			<div id="left-footer">
-				<span>&copy; City of Dexter, MI</span>
-				<span>(P) 734-426-8303</span>
-				<span>(F) 734-426-5614</span>
-				<span>Address: 8123 Main Street, 2nd Floor, Dexter, MI 48130</span>
-				<span><span>Hours:</span> M-F 9:00 AM-5:00 PM</span>
+				<div id="top-left">
+					<span><span>&copy; 2018</span> City of Dexter, Michigan</span>
+					<span>(P) 734-426-8303</span>
+					<span>(F) 734-426-5614</span>
+				</div><!-- /#top-left -->
+				<div id="bottom-left">
+					<span>Address: 8123 Main Street, 2nd Floor, Dexter, MI 48130</span>
+					<span><span>Hours:</span> M-F 9:00 AM-5:00 PM</span>
+				</div><!-- /#bottom-left -->
 			</div><!-- /#left-footer -->
 		
 			<div id="right-footer">
@@ -273,8 +277,8 @@
 			</div><!-- /#right-footer -->
 		</section><!-- /#top-footer -->
 
-		<section id="revize-logo">
-			<span>Powered by <a href="https://www.revize.com/">revize</a>, The Government Website Experts.</span>
+		<section id="revize-logo" class="fillLeft fillRight withPadding">
+			<span>Powered by <a href="https://www.revize.com/">revize.</a> - The Government Website Experts.</span>
 		</section><!-- /#revize-logo -->
 	</div><!-- /.container -->
 </footer>

@@ -43,6 +43,11 @@
 	src: url(../fonts/arnopro/ArnoPro-Bold.woff) format('woff');
 	src: url(../fonts/arnopro/arno-pro-bold.woff2) format('woff2');
 }
+@font-face {
+	font-family: 'GothamBook';
+	src: url(../fonts/gotham/Gotham\ Book.woff) format('woff');
+	src: url(../fonts/gotham/GothamBook.woff2) format('woff2');
+}
 body{background:#fff;font-size:14px;line-height:1.6;font-family:'ArnoPro',sans-serif;color:#444;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%}
 
 /* -----------------------------------------
@@ -256,7 +261,7 @@ body{overflow-x:hidden}
 .goog-te-gadget img{display:none}
 .goog-te-gadget-simple{background-color:transparent!important;border:none!important;padding:0!important}
 .goog-te-menu-value span{display:none}
-.goog-te-menu-value span:first-of-type{display:inline-block;margin-left:-4px;font-size:16px;color:#444}
+.goog-te-menu-value span:first-of-type{position: relative; top: -1px;font-family:'CenturyGothicRegular';display:inline-block;margin-left:-4px;font-size:18px;color:#444;text-transform:uppercase;text-decoration: underline!important;}
 
 /*--------------- #nav ---------------*/
 header {position: relative; background-color: #315127; text-align: right; z-index: 100; font-size: 0;}
@@ -334,6 +339,28 @@ nav,
 #welcome-info p {font-size: 18px; line-height: 33px; color: #fff; padding: 0 52px 0 34px; opacity: 0.8;}
 #welcome-info a {font-family: 'CenturyGothicRegular'; font-size: 18px; line-height: 33px; font-weight: 400; color: #def2c8; text-transform: uppercase; text-decoration: none; margin-left: 18px;}
 #welcome-info a:after {content: '>'; margin-left: 7px;}
+
+/*--------------- footer ---------------*/
+footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 18px; line-height: 33px; color: #fff; padding: 51px 0 0;}
+
+#top-footer span span {color: #d1c3a1;}
+#left-footer {float: left;}
+#left-footer>div>span {position:relative;margin-right: 50px;}
+#left-footer>div>span:not(:last-of-type):after {content: ''; position: absolute; top: 4px; right: -31px; bottom: 0; background-color: #315127; width: 2px;}
+#top-left {margin-bottom: 21px;}
+#right-footer {float: right; text-align: right;}
+#top-right {margin-bottom: 18px;}
+#top-right>a {text-transform: uppercase; color: #d1c3a1; margin: 0 5px 0 38px;}
+#google-translate {display: inline-block; text-decoration: underline;}
+.social-links {display: inline-block; position: relative; top: -2px;}
+.social-links a {text-decoration: none; color: #d1c3a1; margin-left: 37px;}
+.social-links a.fa-share-alt {position: relative; top: 5px; font-size: 30px;}
+.social-links a.fa-facebook {background-color: #d1c3a1; color: #111; border-radius: 50%; width: 30px; height: 30px; line-height: 30px; text-align: center;}
+#bottom-right a {position: relative; text-transform: capitalize; color: #fff; margin-left: 46px;}
+#bottom-right a:not(:last-of-type):after {content: ''; position: absolute; top: 4px; right: -28px; bottom: 0; background-color: #315127; width: 2px;}
+
+#revize-logo {font-family: 'GothamBook'; font-size: 14px; line-height: 22px; letter-spacing: 0.05em; background-color: #000; text-align: center; margin-top: 43px; padding: 18px 0 19px; border-bottom: 9px solid #315127;}
+#revize-logo a {font-family: 'Roboto'; font-size: 18px; font-weight: 700; text-decoration: none; color: #fff;}
 
 /* -----------------------------------------
 
