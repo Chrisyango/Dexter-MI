@@ -447,11 +447,11 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 	#flyout,#nav{display:block!important}
 
 	/*--------------- #nav ---------------*/
-	#nav>li:hover>a {font-family: 'CenturyGothic'; text-transform: uppercase; background-color: rgba(209,195,161,0.9); letter-spacing: 0.025em; font-size: 18px;}
+	#nav>li:hover>a.mega {font-family: 'CenturyGothic'; text-transform: uppercase; background-color: rgba(209,195,161,0.9); letter-spacing: 0.025em; font-size: 18px;}
+	.mega-line {position: absolute; top: 100%; left: 0; right: 0; height: 10px; background-color: rgba(209,195,161,0.9); opacity: 0; transition: 0.3s all;}
+	#nav>li:hover>a.mega>.mega-line {opacity: 1;}
 	#nav li:hover>.mega-menu-wrapper,
 	#nav ul {display: block;}
-	#nav .mega-menu-wrapper,
-	#nav ul{display: block;}
 	#nav .mega-menu-wrapper {position: absolute; top: calc(100% + 10px); left: 0; right: -23px; background-color: #faf9f5; text-align: left; font-size: 0; padding: 33px;}
 	#nav>li>.mega-menu-wrapper>ul {float: left; column-count: 2; column-gap: 30px; width: 60%; padding-left: 17px; padding-top: 46px;}
 	#nav ul li {display: block; margin-bottom: 2px;}

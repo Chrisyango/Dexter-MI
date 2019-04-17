@@ -354,6 +354,7 @@
 			$('<div class="mega-container"><span class="mega-header">our '+navText+' - menu</span></div>').prependTo($(this).next());
 		});
 		$('.mega-img').insertAfter('.mega-menu-wrapper>div>span');
+		$('<div class="mega-line"></div>').appendTo('.mega');
 
 		// Clone Useful Links Icon
 		if($('#useful-links').length) {
