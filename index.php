@@ -211,7 +211,7 @@
 									<li><a href="./">City Newsletter</a></li>
 									<li><a href="./">Emergency Services</a></li>
 									<li><a href="./">Farmer's Market</a></li>
-									<li><a href="./">Nayor's Report</a></li>
+									<li><a href="./">Mayor's Report</a></li>
 									<li><a href="./">Ordinances</a></li>
 									<li><a href="./">Zoning + Planning</a></li>
 									<li><a href="./">Resident Handbook</a></li>
