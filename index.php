@@ -202,21 +202,23 @@
 					<section id="quick-links" class="col-md-3">
 						<div id="quick-links-wrapper" class="fillRight">
 							<div id="quick-links-bg" style="background:url('./_assets_/images/ql-bg.jpg') center no-repeat;background-size:cover;"></div>
-							<h2>quick links</h2>
-							<ul>
-								<li><a href="./">Bid Opportunities</a></li>
-								<li><a href="./">Find + Apply for Permits</a></li>
-								<li><a href="./">City Charter</a></li>
-								<li><a href="./">City Newsletter</a></li>
-								<li><a href="./">Emergency Services</a></li>
-								<li><a href="./">Farmer's Market</a></li>
-								<li><a href="./">Nayor's Report</a></li>
-								<li><a href="./">Ordinances</a></li>
-								<li><a href="./">Zoning + Planning</a></li>
-								<li><a href="./">Resident Handbook</a></li>
-								<li><a href="./">Billing + Payments</a></li>
-								<li><a href="./">FAQ + Information</a></li>
-							</ul>
+							<div id="quick-links-content">
+								<h2>quick links</h2>
+								<ul>
+									<li><a href="./">Bid Opportunities</a></li>
+									<li><a href="./">Find + Apply for Permits</a></li>
+									<li><a href="./">City Charter</a></li>
+									<li><a href="./">City Newsletter</a></li>
+									<li><a href="./">Emergency Services</a></li>
+									<li><a href="./">Farmer's Market</a></li>
+									<li><a href="./">Nayor's Report</a></li>
+									<li><a href="./">Ordinances</a></li>
+									<li><a href="./">Zoning + Planning</a></li>
+									<li><a href="./">Resident Handbook</a></li>
+									<li><a href="./">Billing + Payments</a></li>
+									<li><a href="./">FAQ + Information</a></li>
+								</ul>
+							</div><!-- /#quick-links-content -->
 						</div><!-- /#quick-links-wrapper -->
 					</section><!-- /#quick-links -->
 				</div><!-- /.row -->
