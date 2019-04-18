@@ -50,8 +50,9 @@
 			<div tabindex="0" id="search-toggle-mobile" class="fa fa-search"></div>
 			<div tabindex="0" id="nav-toggle" class="fa fa-bars"></div>	
 		</div><!-- /#toggles -->
+	</div><!-- /.container -->
 
-		<nav>
+	<nav>
 			<ul id="nav">
 				<li>
 					<a href="./">community</a>
@@ -94,9 +95,8 @@
 				<li><a href="./">i want to..</a></li>
 			</ul> <!-- /#nav -->
 		</nav>
-	</div><!-- /.container -->
 
-	<div tabindex="0" id="search-toggle" class="fa fa-search"></div>
+	<div tabindex="0" id="search-toggle" class="fa fa-search hidden-sm hidden-xs"></div>
 	<div id="search">
 		<form class="search-form" method="get" action="search.php">
 			<label class="fa fa-search" for="search-input"></label>

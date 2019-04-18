@@ -55,7 +55,8 @@
 
 	// Search Toggle
 	$('#search-toggle').on('click keypress',function(e){
-		($(this).outerHeight() === 90) ? $(this).css({'height': '100px', 'background-color': '#315127'}) : $(this).css({'height': '90px', 'background-color': 'transparent'})
+		let searchHeight = $('header').outerHeight();
+		($(this).outerHeight() === searchHeight) ? $(this).css({'height': searchHeight + 10 + 'px', 'background-color': '#315127'}) : $(this).css({'height': searchHeight + 'px', 'background-color': 'transparent'})
 		$('#search').stop().slideToggle(200);
 		$(this).toggleClass('fa-search fa-close');
 	});
@@ -278,12 +279,11 @@
 
 		// Mega Menu		
 		$("#nav>li>ul").addClass('mega-menu clearfix');
-		$('.mega-menu').wrap('<div class="mega-menu-wrapper"></div>')
 		$('#nav>li>a').each(function(){
 			var navText = $(this).text();
 			$('<div class="mega-container"><span class="mega-header">our '+navText+' - menu</span></div>').prependTo($(this).next());
 		});
-		$('.mega-img').insertAfter('.mega-menu-wrapper>div>span');
+		$('.mega-img').insertAfter('.mega-container>span');
 		$('<div class="mega-line"></div>').appendTo('.mega');
 
 		// Clone Useful Links Icon
