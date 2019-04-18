@@ -245,10 +245,10 @@
 				500: {
 					items: usefulLinkItem(2),
 				},
-				500: {
+				700: {
 					items: usefulLinkItem(3),
 				},
-				800: {
+				900: {
 					items: usefulLinkItem(4),
 				},
 				1100: {
