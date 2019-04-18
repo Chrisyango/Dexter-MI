@@ -562,6 +562,9 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 	#flyout ul span{width:100%}
 	#flyout li:hover > ul{display:none}
 
+	/*--------------- #slider ---------------*/
+	#slider {height: 550px; margin-top: -90px;}
+
 }
 
 	/* All Mobile Sizes (devices and browser) */
