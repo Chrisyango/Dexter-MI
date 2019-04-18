@@ -108,11 +108,11 @@
 
 <section id="slider">
 	<ul class="bxslider">
-		<li style="background: url('./_assets_/images/hero1.jpg') center no-repeat;background-size:cover;"></li>
-		<!-- <li style="background: url('./_assets_/images/hero2.jpg') center no-repeat;background-size:cover;"></li>
-		<li style="background: url('./_assets_/images/hero3.jpg') center no-repeat;background-size:cover;"></li> -->
+		<li style="background: url('./_assets_/images/hero1.png') center no-repeat;background-size:cover;"></li>
+		<!-- <li style="background: url('./_assets_/images/hero2.png') center no-repeat;background-size:cover;"></li>
+		<li style="background: url('./_assets_/images/hero3.png') center no-repeat;background-size:cover;"></li> -->
 	</ul><!-- /.bxslider -->
-	<a href="./" class="fa fa-chevron-down"></a>
+	<a href="#main" class="fa fa-chevron-down"></a>
 </section><!-- /#slider -->
 
 <main id="main">
