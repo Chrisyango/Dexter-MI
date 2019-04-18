@@ -500,6 +500,8 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 
 	#quick-links-wrapper ul li a {font-size: 18px; line-height: 30px;}
 
+	#welcome-info h1 img {height: auto; width: 100%;}
+
 }
 
 @media only screen and (max-width:1280px) {
@@ -523,6 +525,12 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 
 	/*--------------- #content ---------------*/
 	#quick-links-wrapper {padding-left: 15px; padding-right: 15px;}
+
+	#welcome-info {padding: 30px;}
+	#welcome-info h1 {font-size: 28px;}
+	#welcome-info h1 img {margin-top: 0;}
+	#welcome-info p,
+	#welcome-info a {margin-right: 0; font-size: 17px; line-height: 30px;}
 
 }
 
@@ -602,6 +610,8 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 
 	#quick-links-wrapper {margin-left: -15px; margin-top: 50px; padding: 15px;}
 
+	#welcome {margin-top: 50px;}
+
 }
 
 	/* All Mobile Sizes (devices and browser) */
@@ -613,6 +623,13 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 	.floating-alert .btn{font-size:10px;padding:7px 12px!important}
 	.share-btns a{height:auto;padding:10px;width:100%;font-size:12px;white-space:nowrap;overflow:hidden}
 	.share-btns i{display:block;line-height:50px!important;font-size:20px}
+
+	/*--------------- #content ---------------*/
+	#welcome {height: auto;}
+	#welcome-img {display: none;}
+	#welcome-info {width: 100%;}
+	#welcome-info h1 img {margin-left: 0;}
+	#welcome-info p {padding: 0;}
 
 }
 
@@ -637,6 +654,9 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 	.news-link a {font-size: 14px; line-height: 30px;}
 
 	#quick-links-wrapper ul li a {font-size: 16px; line-height: 26px;}
+
+	#welcome-info p,
+	#welcome-info a {font-size: 16px; line-height: 28px}
 
 }
 
