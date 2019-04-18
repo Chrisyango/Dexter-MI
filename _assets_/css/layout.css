@@ -347,7 +347,8 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 
 #top-footer span span {color: #d1c3a1;}
 #left-footer {float: left;}
-#left-footer>div>span {position:relative;margin-right: 50px;}
+#left-footer>div>span {position:relative;}
+#left-footer>div>span:not(:last-of-type) {margin-right: 50px;}
 #left-footer>div>span:not(:last-of-type):after {content: ''; position: absolute; top: 4px; right: -31px; bottom: 0; background-color: #315127; width: 2px;}
 #top-left {margin-bottom: 21px;}
 #right-footer {float: right; text-align: right;}
@@ -358,7 +359,8 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 .social-links a {text-decoration: none; color: #d1c3a1; margin-left: 37px;}
 .social-links a.fa-share-alt {position: relative; top: 5px; font-size: 30px;}
 .social-links a.fa-facebook {background-color: #d1c3a1; color: #111; border-radius: 50%; width: 30px; height: 30px; line-height: 30px; text-align: center;}
-#bottom-right a {position: relative; text-transform: capitalize; color: #fff; margin-left: 46px;}
+#bottom-right a {position: relative; text-transform: capitalize; color: #fff;}
+#bottom-right a:last-of-type {margin-left: 46px;}
 #bottom-right a:not(:last-of-type):after {content: ''; position: absolute; top: 4px; right: -28px; bottom: 0; background-color: #315127; width: 2px;}
 
 #revize-logo {font-family: 'GothamBook'; font-size: 14px; line-height: 22px; letter-spacing: 0.05em; background-color: #000; text-align: center; margin-top: 43px; padding: 18px 0 19px; border-bottom: 9px solid #315127;}
@@ -532,6 +534,16 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 	#welcome-info p,
 	#welcome-info a {margin-right: 0; font-size: 17px; line-height: 30px;}
 
+	/*--------------- footer ---------------*/
+	footer {font-size: 16px; line-height: 30px;}
+	#left-footer>div>span:not(:last-of-type) {margin-right: 20px;}
+	#left-footer>div>span:not(:last-of-type):after {right: -14px;}
+	#top-right>a {margin-left: 20px;}
+	.goog-te-menu-value span:first-of-type {font-size: 16px;}
+	.social-links a.fa-share-alt {font-size: 26px;}
+	#bottom-right a:last-of-type {margin-left: 20px;}
+	#bottom-right a:not(:last-of-type):after {right: -15px;}
+
 }
 
 @media only screen and (max-width:991px) {
@@ -612,6 +624,16 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 
 	#welcome {margin-top: 50px;}
 
+	/*--------------- footer ---------------*/
+	footer {padding-top: 30px;}
+	#left-footer,
+	#right-footer {float: none; text-align: left;}
+	#top-left,
+	#bottom-left,
+	#top-right {margin-bottom: 15px;}
+
+	#revize-logo {margin-top: 30px;}
+
 }
 
 	/* All Mobile Sizes (devices and browser) */
@@ -627,9 +649,16 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 	/*--------------- #content ---------------*/
 	#welcome {height: auto;}
 	#welcome-img {display: none;}
-	#welcome-info {width: 100%;}
+	#welcome-info {float: none; width: 100%;}
 	#welcome-info h1 img {margin-left: 0;}
 	#welcome-info p {padding: 0;}
+
+	/*--------------- footer ---------------*/
+	footer {font-size: 14px; line-height: 24px;}
+	.goog-te-menu-value span:first-of-type {font-size: 14px;}
+
+	#revize-logo {margin-top: 30px; font-size: 12px; line-height: 18px;}
+	#revize-logo a {font-size: 16px;}
 
 }
 
@@ -657,6 +686,17 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 
 	#welcome-info p,
 	#welcome-info a {font-size: 16px; line-height: 28px}
+
+	/*--------------- footer ---------------*/
+	footer {font-size: 12px; line-height: 20px;}
+	.goog-te-menu-value span:first-of-type {font-size: 12px;}
+	#left-footer>div>span:not(:last-of-type) {display: block}
+	#left-footer>div>span:not(:last-of-type):after {display: none;}
+	.social-links a.fa-share-alt {font-size: 20px}
+	.social-links a.fa-facebook {width: 24px; height: 24px; line-height: 24px;}
+
+	#revize-logo {margin-top: 30px; font-size: 11px; line-height: 16px;}
+	#revize-logo a {font-size: 14px;}
 
 }
 
