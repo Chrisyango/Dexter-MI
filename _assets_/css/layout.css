@@ -251,7 +251,7 @@ body{overflow-x:hidden}
 .goog-te-menu-value span:first-of-type{position: relative; top: -1px;font-family:'CenturyGothicRegular';display:inline-block;margin-left:-4px;font-size:18px;color:#444;text-transform:uppercase;text-decoration: underline!important;}
 
 /*--------------- #nav ---------------*/
-header {position: fixed; top: 0; left: 0; right: 0; background-color: #315127; text-align: right; z-index: 100; font-size: 0; box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);}
+header {position: relative; background-color: #315127; text-align: right; z-index: 100; font-size: 0; box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);}
 header .container {position: relative;}
 #nav-toggle,
 .toggle,
@@ -269,11 +269,10 @@ nav,
 #nav>li>ul {display: none; margin: 0; padding: 0;}
 #nav ul li {position: relative; display: block; margin-bottom: 2px;}
 #nav ul li a,
-#nav ul li span {font-family: 'CenturyGothicRegular'; font-size: 18px; line-height: 36px; letter-spacing: 0.01em; color: #111; text-transform: capitalize; text-decoration: none;}
-#nav ul ul {margin-left: 18px; margin-top: 1px; margin-bottom: 5px;}
+#nav ul li span {font-family: 'CenturyGothicRegular'; text-transform: capitalize; text-decoration: none;}
 #nav ul ul li {margin-bottom: 0;}
 #nav ul ul li a,
-#nav ul ul li span {font-family: 'ArnoProItalic'; font-size: 18px; line-height: 28px; letter-spacing: 0.01em; color: #315127;}
+#nav ul ul li span {font-family: 'ArnoProItalic';}
 
 #search {display: none; position: absolute; top: calc(100% + 10px); right: 0; width: 433px;}
 #search label {display: none;}
@@ -454,6 +453,7 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 	#flyout,#nav{display:block!important}
 
 	/*--------------- #nav ---------------*/
+	header {position: fixed; top: 0; left: 0; right: 0;}
 	#nav>li:hover>a.mega {font-family: 'CenturyGothic'; text-transform: uppercase; background-color: rgba(209,195,161,0.9); letter-spacing: 0.025em; font-size: 18px;}
 	.mega-line {position: absolute; top: 100%; left: 0; right: 0; height: 10px; background-color: rgba(209,195,161,0.9); opacity: 0; transition: 0.3s all;}
 	#nav>li:hover>a.mega>.mega-line {opacity: 1;}
@@ -462,6 +462,12 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 	#nav .mega-container {position: absolute; top: 33px; left: 30px;}
 	#nav .mega-header {font-family: 'CenturyGothic'; font-size: 24px; line-height: 36px; letter-spacing: 0.05em; color: #d1c3a1; text-transform: uppercase;}
 	#nav .mega-img {width: 300px; height: 240px; margin-top: 31px; margin-left: 9px;}
+	#nav ul li a,
+	#nav ul li span {font-size: 18px; line-height: 36px; letter-spacing: 0.01em; color: #111;}
+	#nav ul ul {margin-left: 18px; margin-top: 1px; margin-bottom: 5px;}
+	#nav ul ul li {margin-bottom: 0;}
+	#nav ul ul li a,
+	#nav ul ul li span {font-size: 18px; line-height: 28px; letter-spacing: 0.01em; color: #315127;}
 
 }
 
@@ -574,7 +580,14 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 @media only screen and (min-width:480px) and (max-width:767px) {}
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width:479px) {}
+@media only screen and (max-width:479px) {
+
+	/*--------------- #nav ---------------*/
+	#logo {width: 250px;}
+	#search-toggle-mobile,
+	#nav-toggle {margin: 14px 0 14px 5px;}
+
+}
 
 @media print {
 	header,
