@@ -288,11 +288,12 @@ header #nav {position: relative; display: inline-block; margin: 0; padding: 0; m
 #slider>a {position: absolute; bottom: 46px; left: 50%; transform: translateX(-50%); text-decoration: none; color: #fff; font-size: 38px; z-index: 51; box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);}
 
 /*--------------- #useful-links ---------------*/
-#useful-links {background-color: #d0c3a3; margin-top: -74px;}
+#useful-bg {position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: -1;}
+#useful-links {position: relative; margin-top: -49px; box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.1); z-index: 51;}
 #useful-links .owl-prev,
 #useful-links .owl-next {position: absolute; top: 50%; left: 0; font-size: 36px;}
 #useful-links .owl-next {left: unset; right: 0;}
-.useful-link {display: block; text-align: center; text-decoration: none; padding: 120px 0 12px; transition: 0.3s all;}
+.useful-link {display: block; text-align: center; text-decoration: none; padding: 55px 0 12px; margin-top: 40px; transition: 0.3s all;}
 .useful-link:hover {text-decoration: none; background-color: #e5d8b7;}
 .useful-link:hover h3 {font-family: 'ArnoProSemi';}
 .useful-link:hover .useful-link-icon.clone {opacity: 0.4;}
@@ -373,6 +374,10 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 -----------------------------------------*/
 #freeform #slider {height: 680px; border-bottom-left-radius: 50% 5%; border-bottom-right-radius: 50% 5%; overflow: hidden; box-shadow: 0 15px 0 0 #d0c3a3;}
 #freeform main {padding-top: 67px;}
+#freeform #useful-links {position: relative; margin-top: 135px;}
+#freeform .useful-link {margin-top: 50px; padding-top: 42px;}
+#inner-bg {position: absolute; bottom: 227px; left: 0; right: 0; height: 507px; z-index: -2;}
+#inner-bg:after {content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #fff; opacity: 0.9;}
 
 /*--------------- #flyout ---------------*/
 #side-content {position: relative; background-color: #d1c3a1; margin-right: 44px; padding-bottom: 133px;box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);}

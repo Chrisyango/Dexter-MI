@@ -108,15 +108,16 @@
 
 <section id="slider">
 	<ul class="bxslider">
-		<li style="background: url('./_assets_/images/hero1.png') center no-repeat;background-size:cover;"></li>
-		<!-- <li style="background: url('./_assets_/images/hero2.png') center no-repeat;background-size:cover;"></li>
-		<li style="background: url('./_assets_/images/hero3.png') center no-repeat;background-size:cover;"></li> -->
+		<li style="background: url('./_assets_/images/hero1.jpg') center no-repeat;background-size:cover;"></li>
+		<!-- <li style="background: url('./_assets_/images/hero2.jpg') center no-repeat;background-size:cover;"></li>
+		<li style="background: url('./_assets_/images/hero3.jpg') center no-repeat;background-size:cover;"></li> -->
 	</ul><!-- /.bxslider -->
 	<a href="#main" class="fa fa-chevron-down"></a>
 </section><!-- /#slider -->
 
 <main id="main">
 	<section id="useful-links">
+		<div id="useful-bg" style="background:url('./_assets_/images/useful-bg.png') center no-repeat;background-size:cover;"></div>
 		<div class="container">
 			<div id="useful-links-wrapper" class="owl-carousel">
 				<a href="./" class="useful-link">

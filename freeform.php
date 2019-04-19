@@ -107,6 +107,7 @@
 </section><!-- /#slider -->
 
 <main id="main">
+	<div id="inner-bg" style="background:url('./_assets_/images/inner-bg.png') center no-repeat;background-size:cover;"></div>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-3">
@@ -206,6 +207,7 @@
 	</div><!-- /.container -->
 
 	<section id="useful-links">
+		<div id="useful-bg" style="background:url('./_assets_/images/useful-bg.png') center no-repeat;background-size:cover;"></div>
 		<div class="container">
 			<div id="useful-links-wrapper" class="owl-carousel">
 				<a href="./" class="useful-link">
