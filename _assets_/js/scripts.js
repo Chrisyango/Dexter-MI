@@ -297,7 +297,7 @@
 		// Translate
 		$('#google_translate_element').on('DOMNodeInserted', function(event) {
 			let translateText = $('.goog-te-menu-value span:first').text();
-			if (translateText !== 'Translate ') {
+			if (translateText !== 'Translate') {
 				$('.goog-te-menu-value span:first').html('Translate');
 				$('.goog-te-menu-frame.skiptranslate').load(function(){
 					setTimeout(function(){
@@ -308,6 +308,11 @@
 		});
 
 		// Fill sides script
+		if ($('#right-side-content').length){
+			$('main').css('position','relative');
+			$('<div id="right-side-bg" class="hidden-sm hidden-xs"></div>').prependTo('main');
+		}
+
 		function fillSide(){
 			var windowWidth = $('body').outerWidth();
 			var pixelValue = (windowWidth - $('.container').width()) / 2;
@@ -328,7 +333,7 @@
 					'padding-right': pixelValue
 			});
 			
-			$('#side-bg').width($('#side-content').outerWidth());
+			$('#right-side-bg').width($('#right-side-content').outerWidth());
 		}
 		fillSide();
 		$window.resize(fillSide);

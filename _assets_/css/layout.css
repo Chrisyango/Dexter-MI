@@ -68,8 +68,8 @@ h3{font-size:28px}
 h4{font-size:21px}
 h5{font-size:16px}
 h6{font-size:14px}
-.header{font-size:28px;color:#111;margin-bottom:30px}
-.subheader{font-size:21px;color:#111;margin-bottom:30px}
+.header{display:block; font-family: 'ArnoProItalic'; font-size:22px; line-height: 28px; color:#d1c3a1; text-transform: capitalize; margin-bottom: 1px; margin-top: 55px;}
+.subheader{display: block; font-size: 18px; line-height: 28px; color: #111; text-transform: capitalize; text-decoration: underline;}
 p{margin:0 0 30px 0}
 em{font-style:italic}
 strong,b{font-weight:bold}
@@ -258,8 +258,8 @@ header .container {position: relative;}
 .toggle2{display:none}
 #logo {position: absolute; top: 0; left: -2px; width: 428px;}
 
-nav,
-#nav {position: relative; display: inline-block; margin: 0; padding: 0; margin-right: 59.5px;}
+header nav,
+header #nav {position: relative; display: inline-block; margin: 0; padding: 0; margin-right: 59.5px;}
 #nav>li {display: inline-block; margin: 0; padding: 0;}
 #nav>li>a,
 #nav>li>span {position: relative; display: block; font-family: 'CenturyGothic'; font-size: 19px; line-height: 36px; letter-spacing: 0.005em; color:#fff; text-transform: capitalize; text-decoration: none; padding: 26px 33px 28px 44px;}
@@ -371,19 +371,52 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 #inner
 
 -----------------------------------------*/
+#freeform #slider {height: 680px; border-bottom-left-radius: 50% 5%; border-bottom-right-radius: 50% 5%; overflow: hidden; box-shadow: 0 15px 0 0 #d0c3a3;}
+#freeform main {padding-top: 67px;}
+
+/*--------------- #flyout ---------------*/
+#side-content {position: relative; background-color: #d1c3a1; margin-right: 44px; padding-bottom: 133px;box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);}
+#side-content a.btn {position: absolute; bottom: -90px; left: 50%; transform: translateX(-49%); font-family: 'ArnoProSemi'; font-size: 20px; letter-spacing: 0.01em; color:#464646; text-transform: capitalize; width: 220px; height: 50px; line-height: 55px; padding: 0; border-radius: 25px;}
+#flyout-bg {position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.07;}
+#flyout-header {font-family: 'ArnoProBold'; font-size: 36px; line-height: 36px; color: #fff; text-transform: capitalize; margin-bottom: 35px; display: block;}
+#flyout-wrap {position: relative;padding-top: 44px;z-index: 1;left:-1px}
 #flyout{margin:0;padding:0}
 #flyout li{margin:0;display:block;position:relative}
 #flyout a,
-#flyout span{text-decoration:none;padding:15px 20px;display:block;border-bottom:1px solid #000}
+#flyout span{font-family: 'CenturyGothicRegular'; font-size: 18px; line-height: 28px; letter-spacing: 0.01em; text-transform: capitalize; text-decoration:none;display:block;color:#111; margin-bottom: 12px;}
+#flyout a:hover,
+#flyout span:hover {font-family: 'CenturyGothic';}
 #flyout ul{display:none;position:absolute;top:0;left:100%;margin:0;padding:0;background:#aaa}
 #flyout ul a,
 #flyout ul span{font-size:13px;padding:10px 15px;width:180px}
 #flyout li:hover > ul{display:block}
 
-#breadcrumbs{font-size:13px;text-transform:capitalize}
-#breadcrumbs p{margin:0}
-#breadcrumbs a{text-decoration:none}
-#breadcrumbs i{font-size:13px;margin:0 4px}
+/*--------------- inner ---------------*/
+#breadcrumbs{font-size:16px;line-height:38px;text-transform:capitalize}
+#breadcrumbs p {margin:0;}
+#breadcrumbs p span{font-family: 'CenturyGothic';margin:0;text-decoration: underline; color:#d1c3a1;}
+#breadcrumbs a{font-family: 'CenturyGothicRegular';text-decoration:none;color:#111;}
+#breadcrumbs a:after {content: '>'; margin: 0 10px 0 8px;}
+
+#page-title {font-family: 'ArnoProBold'; font-size: 36px; line-height: 36px; color: #315127; text-transform: capitalize; margin: 5px 0;}
+#post {margin-top: 104px; margin-left: -11px;}
+#post p {font-size: 18px; line-height: 28px; color:#111; margin-bottom: 28px;}
+#post a {font-family: 'ArnoProItalic'; font-size: 18px; line-height: 28px; color: #315127;}
+
+/*--------------- #right-side-content ---------------*/
+#right-side-bg {position: absolute; top: -40px; bottom: 0; right: 0; background-color: #e7e7e7; z-index: -1;}
+#right-side-content {background-color:#e7e7e7; margin-left: 44px; padding-left: 49px; margin-top: -15px;}
+#right-side-content div:not(:first-of-type) {position: relative; margin-top: 64px;}
+#right-side-content div:not(:first-of-type):after {content: ''; position: absolute; top: -28px; left: -1px; height: 2px; width: 80px; background-color: #315127; opacity: 0.1;}
+#right-side-content span:not(.person-title),
+#right-side-content a {display: block;}
+#right-side-content a:not(.email) {font-family: 'ArnoProSemi'; font-size: 20px; line-height: 25px; color: #315127; text-transform: capitalize; margin-bottom: 33px;}
+.side-header {font-family: 'CenturyGothicRegular'; font-size: 16px; line-height: 38px; color:#464646; text-transform: uppercase; margin-bottom: 22px;}
+.person-info {margin-bottom: 32px;}
+.person-name {font-family: 'ArnoProSemi'; font-size: 20px; line-height: 25px; color: #111; text-transform: capitalize;}
+.person-title {font-family: 'ArnoProItalic'; display: inline;}
+.term-end {font-family: 'ArnoProItalic'; font-size: 20px; line-height: 25px; color: #636363; text-transform: capitalize;}
+a.email {font-size: 20px; line-height: 25px; color: #315127;}
 
 /* -----------------------------------------
 
