@@ -258,8 +258,8 @@ header .container {position: relative;}
 .toggle2{display:none}
 #logo {position: absolute; top: 0; left: -2px; width: 428px;}
 
-header nav,
-header #nav {position: relative; display: inline-block; margin: 0; padding: 0; margin-right: 59.5px;}
+nav,
+#nav {position: relative; display: inline-block; margin: 0; padding: 0; margin-right: 59.5px;}
 #nav>li {display: inline-block; margin: 0; padding: 0;}
 #nav>li>a,
 #nav>li>span {position: relative; display: block; font-family: 'CenturyGothic'; font-size: 19px; line-height: 36px; letter-spacing: 0.005em; color:#fff; text-transform: capitalize; text-decoration: none; padding: 26px 33px 28px 44px;}
@@ -542,6 +542,9 @@ a.email {font-size: 20px; line-height: 25px; color: #315127;}
 
 	#welcome-info h1 img {height: auto; width: 100%;}
 
+	/*--------------- inner ---------------*/
+	#right-side-content {padding: 0 15px;}
+
 }
 
 @media only screen and (max-width:1280px) {
@@ -612,7 +615,7 @@ a.email {font-size: 20px; line-height: 25px; color: #315127;}
 	#nav-toggle{display:inline-block;cursor:pointer;height:45px;width:45px;line-height:45px;text-align:center;color:#fff;}
 	.down-arrow{display:none} /* if not hidden above */
 	nav,
-	#nav {width: 100%; text-align: left;}
+	#nav {width: 100%; text-align: left; margin-right: 0;}
 	#nav{display:none; margin-top: 15px;}
 	#nav li{float:none;display:block}
 	#nav li a,
