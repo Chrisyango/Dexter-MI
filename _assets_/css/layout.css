@@ -379,6 +379,8 @@ footer {background-color: #111; font-family: 'CenturyGothicRegular'; font-size: 
 #inner-bg {position: absolute; bottom: 227px; left: 0; right: 0; height: 507px; z-index: -2;}
 #inner-bg:after {content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: #fff; opacity: 0.9;}
 
+#freeform.fullwidth #post {margin-left: 0;}
+
 /*--------------- #flyout ---------------*/
 #side-content {position: relative; background-color: #d1c3a1; margin-right: 44px; padding-bottom: 133px;box-shadow: 0px 5px 30px 0px rgba(0, 0, 0, 0.08);}
 #side-content a.btn {position: absolute; bottom: -90px; left: 50%; transform: translateX(-49%); font-family: 'ArnoProSemi'; font-size: 20px; letter-spacing: 0.01em; color:#464646; text-transform: capitalize; width: 220px; height: 50px; line-height: 55px; padding: 0; border-radius: 25px;}
