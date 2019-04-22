@@ -781,7 +781,9 @@ a.email {font-size: 20px; line-height: 25px; color: #315127;}
 	.floating-share-btn,
 	.nav-wrap,
 	.sidebar,
-	#flyout-wrap,
+	#side-content,
+	#right-side-content,
+	#useful-links,
 	.e-notify{display:none!important}
 	a[href]:after{content:none!important}
 }
