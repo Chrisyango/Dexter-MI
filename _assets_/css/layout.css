@@ -288,7 +288,7 @@ nav,
 #slider>a {position: absolute; bottom: 46px; left: 50%; transform: translateX(-50%); text-decoration: none; color: #fff; font-size: 38px; z-index: 51; box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.15);}
 
 /*--------------- #useful-links ---------------*/
-#useful-bg {position: absolute; top: 0; left: 0; width: 100%; z-index: -1;}
+#useful-bg {position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: -1;}
 #useful-links {position: relative; margin-top: -49px; box-shadow: 0px 20px 25px 0px rgba(0, 0, 0, 0.1); z-index: 51;}
 #useful-links .owl-prev,
 #useful-links .owl-next {position: absolute; top: 50%; left: 0; font-size: 36px;}
@@ -585,6 +585,10 @@ a.email {font-size: 20px; line-height: 25px; color: #315127;}
 	#bottom-right a:last-of-type {margin-left: 20px;}
 	#bottom-right a:not(:last-of-type):after {right: -15px;}
 
+	/*--------------- inner ---------------*/
+	#side-content {margin-right: 0; padding-right: 15px;}
+	#right-side-content {margin-left: 0;}
+	#post {margin-top: 30px; margin-left: 0;}
 }
 
 @media only screen and (max-width:991px) {
@@ -635,10 +639,14 @@ a.email {font-size: 20px; line-height: 25px; color: #315127;}
 	#flyout .toggle{position:absolute;right:0;top:0;background:rgba(0,0,0,.2)}
 	#nav li li:hover > a{background:none;color:#fff}
 
+	#side-content {padding-bottom: 0; margin-right: -15px;}
+	#side-content a.btn {display: none;}
+	#flyout-wrap {padding-top: 0;}
+	#flyout-header {display: none;}
+	#flyout-toggle {font-size: 18px; padding: 15px 0;}
 	#flyout{display:none}
-	#flyout li{}
 	#flyout li a,
-	#flyout li span{padding:20px 30px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px}
+	#flyout li span{padding:15px;line-height:1;border-bottom:1px solid rgba(0,0,0,.2);background:none;font-size:14px;margin-bottom:0}
 	#flyout ul{position:static;left:0;padding:0;background:rgba(0,0,0,.2)}
 	#flyout ul a,
 	#flyout ul span{width:100%}
@@ -674,6 +682,13 @@ a.email {font-size: 20px; line-height: 25px; color: #315127;}
 	#top-right {margin-bottom: 15px;}
 
 	#revize-logo {margin-top: 30px;}
+
+	/*--------------- inner ---------------*/
+	#freeform #slider {border-radius: 0;}
+	#freeform main {padding-top: 0;}
+	#freeform #useful-links {margin-top: 100px;}
+	#entry {padding-top: 50px;}
+	#right-side-content {margin-left: -15px; margin-top: 50px; padding: 30px 15px 15px;}
 
 }
 
@@ -738,6 +753,21 @@ a.email {font-size: 20px; line-height: 25px; color: #315127;}
 
 	#revize-logo {margin-top: 30px; font-size: 11px; line-height: 16px;}
 	#revize-logo a {font-size: 14px;}
+
+	/*--------------- inner ---------------*/
+	#breadcrumbs {font-size: 14px; line-height: 32px;}
+
+	#page-title {font-size: 32px; line-height: 32px;}
+	.header {font-size: 20px; line-height: 24px; margin-top: 30px;}
+	.subheader,
+	#post p,
+	#post a{font-size: 16px; line-height: 22px;}
+
+	.side-header {font-size: 14px; line-height: 32px;}
+	.person-name,
+	.term-end,
+	a.email,
+	#right-side-content a:not(.email){font-size: 18px; line-height: 22px;}
 
 }
 
